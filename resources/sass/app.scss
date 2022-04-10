@@ -1,0 +1,470 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Bootstrap-icons
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+$main-color: #c9aa59;
+$backgroundColor: #1a1814;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.f-color {
+    color: $main-color;
+    text-transform: capitalize;
+}
+
+.color-white {
+    color: white;
+}
+main {
+    padding: 0px !important;
+}
+//-nav
+nav {
+    .nav-item {
+        margin: 0 20px;
+    }
+    li {
+        a {
+            color: white !important;
+        }
+        &:hover {
+            border-bottom: $main-color 2px solid;
+        }
+    }
+
+    .login-btn {
+        background-color: $main-color;
+        padding: 0px 5px 0 5px;
+        border-radius: 10px;
+        color: white;
+        margin: 0 5px !important;
+    }
+    @media screen and (max-width: 992px) {
+        .login-btn {
+            margin: 10px 0 !important;
+        }
+    }
+}
+
+//-hero
+.hero {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    .hero-text {
+        font-size: 65px;
+        text-align: center;
+        color: white;
+        margin-top: 7%;
+    }
+    .login-btn {
+        background-color: rgba(100, 100, 100, 0.2);
+        border: 2px solid $main-color;
+        padding: 0px 15px 0 15px;
+        border-radius: 37px;
+        color: white;
+        margin: 0 5px !important;
+        font-size: 45px;
+        margin: auto !important;
+        &:hover {
+            background-color: $main-color;
+            color: black;
+        }
+    }
+}
+.hero-cover {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+//-oud lesson
+.oud-lesson {
+    width: 100%;
+    background-color: $backgroundColor;
+    .lesson-overveiw {
+        margin-top: 20px;
+        margin-left: 15px;
+        .course-desc {
+            width: 80%;
+            color: white;
+            font-size: 24px;
+        }
+    }
+    .login-btn {
+        border: 2px solid #c9aa59;
+        padding: 0px 15px 0 15px;
+        border-radius: 9px;
+        color: white;
+        margin: 0 5px !important;
+        font-size: 31px;
+        margin: auto !important;
+    }
+    .player-1 {
+        margin-top: 20px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        & {
+            @media screen and (max-width: 787px) {
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .vocal-cover {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+//- instrument
+.instrument {
+    background-color: $backgroundColor;
+    h4 {
+        color: white;
+        font-size: 50px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: $main-color;
+    }
+    .card-image {
+        width: 79px;
+        height: 79px;
+        img {
+            width: 79px;
+            height: 79px;
+        }
+    }
+    .card-info {
+        width: 100%;
+        p {
+            color: $main-color;
+            margin-bottom: 0px;
+            span {
+                margin-left: 20%;
+            }
+            .white-desc {
+                color: white !important;
+            }
+        }
+    }
+}
+
+//-happy-student
+.happy-student {
+    background-size: cover;
+    h4 {
+        color: white;
+        font-size: 50px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: $main-color;
+    }
+    .vocal-cover {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .review-card {
+        border-radius: 20px;
+        background-color: #26231b;
+        p {
+            font-size: 16px;
+        }
+    }
+    .reviw-image {
+        margin-top: -40px;
+        margin-left: 20px;
+    }
+    .student-name {
+        font-size: 16px;
+    }
+    .student-level {
+        font-size: 14px;
+    }
+}
+
+//-teachers
+.oud-teachers {
+    background-color: $backgroundColor;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .reviw-image {
+        .teacher-desc {
+            display: none;
+        }
+        &:hover {
+            .teacher-desc {
+                display: block;
+                color: white;
+            }
+        }
+    }
+
+    h4 {
+        color: white;
+        font-size: 50px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: $main-color;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+//-footer
+
+footer {
+    padding-bottom: 20px;
+    background-color: #000;
+    padding-left: 10px;
+}
+
+footer > p {
+    margin: 20px 0 0 0;
+}
+
+footer .container {
+    border-bottom: 2px solid #252525;
+}
+
+footer .logo {
+    padding: 0;
+    background-color: #000;
+}
+
+footer .logo img {
+    margin: 0;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+}
+
+footer .page-item {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+footer .page-item a {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    background: #252525;
+    padding: 8px 18px 6px;
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    margin-right: 8px;
+}
+
+footer .page-item a span {
+    -webkit-transform: skewX(15deg);
+    transform: skewX(15deg);
+    display: inline-block;
+}
+
+footer .section-title {
+    color: #c2b7b7;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+footer .section-title h5 {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+footer .section-title .dash {
+    margin-top: 3px;
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    float: left;
+    width: 11px;
+    margin-right: 8px;
+    margin-left: 10px;
+    height: 15px;
+    background-color: $main-color;
+}
+
+footer .trending-item {
+    margin: 25px 0;
+    padding: 0 10px;
+}
+
+footer .trending-item .ti-pic {
+    width: 30%;
+    float: left;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+footer .trending-item .ti-pic img {
+    width: 100%;
+}
+
+footer .trending-item .ti-text {
+    padding-left: 0;
+    color: #ddd;
+    width: 70%;
+    font-size: 8px;
+    float: left;
+    height: 100%;
+}
+
+footer .trending-item .ti-text h6 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .trending-item .ti-text ul {
+    margin-bottom: 0;
+}
+
+footer .trending-item .ti-text ul li {
+    font-size: 12px;
+    display: inline;
+}
+
+.tag-list a {
+    display: inline-block;
+    font-size: 17px;
+    color: #c4c4c4;
+    padding: 6px 12px 5px;
+    border: 1px solid #363636;
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    margin-right: 9px;
+    margin-bottom: 15px;
+}
+
+.tag-list a span {
+    display: inline-block;
+    -webkit-transform: skewX(15deg);
+    transform: skewX(15deg);
+}
+
+@media screen and (max-width: 990px) {
+    footer .logo {
+        display: none;
+    }
+    footer .trending-item .ti-pic {
+        width: 100%;
+    }
+    footer .trending-item .ti-pic img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    footer .trending-item .ti-text {
+        margin-top: 10px !important;
+        padding: 0 15px !important;
+    }
+    footer .trending-item ul li {
+        text-align: center;
+    }
+}
+
+.images1 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+//-login
+.log {
+    background-color: #000;
+}
+.card {
+    background-color: $backgroundColor;
+    color: white;
+    button {
+        background-color: $main-color;
+        color: black;
+    }
+}
+
+//-courses
+.courses {
+    img {
+        width: 100% !important;
+    }
+    h4 {
+        color: white;
+        font-size: 50px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: $main-color;
+    }
+    background-color: $backgroundColor;
+    .teacher-card {
+        margin: auto;
+        border-radius: 35px;
+        background-color: white;
+        width: 75%;
+    }
+    .course-info {
+        background-color: black;
+        color: white;
+        border-radius: 0 0 25px 25px;
+    }
+    .holder {
+        padding: 5px 0;
+    }
+    .login-btn {
+        background-color: $main-color;
+        padding: 0px 5px 0 5px;
+        border-radius: 10px;
+        color: black;
+        margin: 0 5px !important;
+    }
+}
+
+//- single-teacher
+.single-teacher {
+    background-color: $backgroundColor;
+    .teacher-info {
+        color: white;
+        margin: 40px 0;
+    }
+    .single-teacher-photo {
+        width: 100%;
+    }
+    .login-btn {
+        background-color: $main-color;
+        padding: 0px 5px 0 5px;
+        border-radius: 10px;
+        color: white;
+        margin: 0 5px !important;
+    }
+}
+//-songle-note
+.single-note {
+    background-color: $backgroundColor;
+}
